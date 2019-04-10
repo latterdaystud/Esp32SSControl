@@ -1,4 +1,4 @@
-# Esp32SSControl
+# Esp32SSControl for the Servo Control section of the Project
 This includes the real-time code to control servos using a Polulo Maestro and serial input from an outside source containing coordinates of the target. This was used as the control of a system that had both a laser and camera connected to the system, turned by the servos to aim at a target. The coordinates of the target were found using oject detection software in the Tensorflow library. The goal was to turn the servos so the target was on the center of the screen. Once it was, an interrupt was set high so the laser turned on. That software was run on a raspberry pi, though as long as the serial data is sent the same, any hardware can work that can run object detection software i.e. Nvidia Jetson, or personal laptop. 
 
 The Polulo Maestro must be used and set to 9600 buad rate. https://www.pololu.com/blog/456/maestro-servo-controller-arduino-library
